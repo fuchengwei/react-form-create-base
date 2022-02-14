@@ -1,0 +1,376 @@
+@import "./scrollbar.less";
+@import "./antd.less";
+
+@primary-color: #409eff;
+
+@primary-background-color: #ecf5ff;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+
+  .svg-icon {
+    fill: currentColor;
+  }
+}
+
+#root {
+  min-width: 1366px;
+  height: 100%;
+  min-height: 100%;
+  color: #2c3e50;
+}
+
+.fc-style {
+  height: 100%;
+
+  *,
+  ::after,
+  ::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .icon {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    vertical-align: -0.15em;
+    fill: currentColor;
+  }
+
+  .fc-container {
+    height: 100%;
+    background-color: #fff;
+
+    .ant-layout {
+      height: 100%;
+      background-color: #fff;
+    }
+
+    .components {
+      width: 100%;
+      height: 100%;
+      padding: 8px 0;
+
+      .widget-cate {
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+
+      ul {
+        position: relative;
+        padding: 0 10px 10px;
+        margin: 0;
+        overflow: hidden;
+        list-style: none;
+
+        .form-edit-widget-label {
+          position: relative;
+          left: 0;
+          display: block;
+          float: left;
+          width: 48%;
+          margin: 1%;
+          overflow: hidden;
+          font-size: 12px;
+          line-height: 26px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          border: 1px solid #f4f6fc;
+
+          & > a {
+            display: block;
+            color: #333;
+            cursor: move;
+            background-color: #f4f6fc;
+            border: 1px solid #f4f6fc;
+
+            .svg-icon {
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              margin: 0 6px 0 8px;
+              vertical-align: middle;
+            }
+
+            span {
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+
+          &:hover {
+            border: 1px dashed @primary-color;
+
+            & > a {
+              color: @primary-color;
+
+              & > .svg-icon {
+                color: @primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .center-container {
+      border-right: 1px solid #e0e0e0;
+      border-left: 1px solid #e0e0e0;
+
+      .btn-bar {
+        height: 45px;
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 45px;
+        text-align: right;
+        background-color: #fff;
+        border-bottom: 2px solid #e4e7ed;
+
+        a {
+          display: flex;
+          align-items: center;
+
+          .svg-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            color: @primary-color;
+          }
+        }
+      }
+
+      .ant-layout-content {
+        position: relative;
+        height: calc(100% - 45px);
+        padding: 0;
+        background-color: #fafafa;
+      }
+
+      .widget-empty {
+        position: relative;
+        background-position: 50%;
+      }
+
+      .widget-form-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        .form-empty {
+          position: absolute;
+          top: 40%;
+          width: 100%;
+          font-size: 20px;
+          color: #ccc;
+          text-align: center;
+        }
+
+        .widget-form-list {
+          min-height: calc(100vh - 65px);
+          max-height: calc(100vh - 65px);
+          margin: 10px;
+          overflow: auto;
+          background-color: #fff;
+          box-shadow: 0 4px 12px #ebedf0;
+
+          .ghost {
+            box-sizing: border-box;
+            height: 3px;
+            padding: 0;
+            overflow: hidden;
+            font-size: 0;
+            content: "";
+            background-color: #f56c6c;
+            border: 2px solid #f56c6c;
+            outline-width: 10px;
+          }
+
+          .child-nodes {
+            min-width: 50px;
+            min-height: 50px;
+          }
+
+          .widget-item-container {
+            position: relative;
+            min-width: 60px;
+            padding-bottom: 18px;
+            margin: 5px 2px;
+            background-color: rgba(236, 245, 255, 30%);
+            border: 1px dashed rgba(170, 170, 170, 70%);
+
+            &.active {
+              border: 1px solid @primary-color;
+              outline: 2px solid @primary-color;
+              outline-offset: 0;
+            }
+
+            &:hover {
+              outline: 1px solid @primary-color;
+              outline-offset: 0;
+
+              &.active {
+                border: 1px solid @primary-color;
+                outline: 2px solid @primary-color;
+                outline-offset: 0;
+              }
+            }
+
+            &.hidden {
+              border: 1px solid #fda085;
+              outline: 2px solid #fda085;
+              outline-offset: 0;
+            }
+
+            div {
+              &.ant-typography-edit-content {
+                left: 0;
+                margin: 0;
+              }
+            }
+
+            .widget-view-drag {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 16px;
+              line-height: 16px;
+              background-color: @primary-color;
+
+              .svg-icon {
+                width: 14px;
+                height: 14px;
+                margin: 2px 3px;
+                color: #fff;
+                cursor: move;
+              }
+            }
+
+            .widget-view-action {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              z-index: 10;
+              height: 16px;
+              line-height: 16px;
+              background-color: @primary-color;
+
+              .svg-icon {
+                width: 14px;
+                height: 14px;
+                margin: 2px 3px;
+                color: #fff;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .widget-config-container {
+      position: relative;
+
+      .ant-layout-header {
+        height: 45px;
+        padding: 0 5px;
+        line-height: 45px;
+        background-color: #fff;
+        border-bottom: 2px solid #e4e7ed;
+
+        .config-tab {
+          display: inline-block;
+          width: 145px;
+          height: 41px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 41px;
+          text-align: center;
+          cursor: pointer;
+
+          &.active {
+            border-bottom: 2px solid @primary-color;
+          }
+        }
+      }
+
+      .config-content {
+        padding: 10px 10px 20px;
+        overflow: auto;
+        background-color: #fff;
+
+        .option-item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .svg-icon {
+            width: 12px;
+            height: 12px;
+          }
+
+          .drag-item {
+            width: 14px;
+            height: 14px;
+            margin: 0 10px;
+            cursor: move;
+          }
+        }
+
+        ul {
+          padding: 0;
+          list-style: none;
+        }
+
+        .ghost {
+          background: #fff;
+          border: 1px dashed @primary-color;
+
+          &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            content: "";
+            background: #fff;
+          }
+        }
+
+        .insert-btn {
+          margin-top: 5px;
+        }
+
+        h4 {
+          padding-bottom: 10px;
+          border-bottom: 1px solid #e1e1e1;
+        }
+
+        .label {
+          margin: 0 5px;
+          font-size: 14px;
+          font-weight: 500;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+
+        .ant-form-item {
+          padding-bottom: 10px;
+          border-bottom: 1px solid #e1e1e1;
+        }
+
+        .ant-form-item-label {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
