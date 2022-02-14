@@ -6,5 +6,6 @@ module.exports = {
     'color-function-notation': null,
     'at-rule-no-unknown': null,
     'property-no-vendor-prefix': null
-  }
+  },
+  ignoreFiles: ['src/example/**']
 }

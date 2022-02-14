@@ -1,9 +1,9 @@
 {
-  "name": "react-form-create-base",
+  "name": "react-form-create",
   "description": "一个基于 React + TS 的表单设计器",
-  "version": "0.0.0",
-  "main": "./dist/react-form-create.umd.js",
-  "module": "./dist/react-form-create.es.js",
+  "version": "0.0.1",
+  "main": "dist/react-form-create.umd.js",
+  "module": "dist/react-form-create.es.js",
   "types": "src/types/index.d.ts",
   "exports": {
     ".": {
@@ -11,8 +11,20 @@
       "require": "./dist/react-form-create.umd.js"
     }
   },
+  "homepage": "https://github.com/fuchengwei/react-form-create-base",
   "author": {
     "name": "fuchengwei"
+  },
+  "keywords": [
+    "Form",
+    "FormCreate",
+    "React",
+    "Antd",
+    "Drag"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:fuchengwei/react-form-create-base"
   },
   "files": [
     "dist/*",

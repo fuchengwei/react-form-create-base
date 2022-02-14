@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/monaco-editor/min/vs/loader.js"></script>
+    <script>
+      require.config({
+        paths: { vs: 'https://unpkg.com/monaco-editor/min/vs' }
+      })
+      window.MonacoEnvironment = {
+        getWorkerUrl: function (workerId, label) {
+          return `data:text/javascript;charset=utf-8,${encodeURIComponent(`
+            self.MonacoEnvironment = {
+              baseUrl: 'https://unpkg.com/monaco-editor/min/'
+            };
+            importScripts('https://unpkg.com/monaco-editor/min/vs/base/worker/workerMain.js');`)}`
+        }
+      }
+      require(['vs/editor/editor.main'], function () {})
+    </script>
+    <title>react-form-create-pro</title>
+    <script type="module" crossorigin src="./assets/index.d547acd1.js"></script>
+    <link rel="modulepreload" href="./assets/vendor.d1a493fe.js">
+    <link rel="stylesheet" href="./assets/index.a99868fe.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
