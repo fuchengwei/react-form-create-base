@@ -1,7 +1,7 @@
 {
   "name": "react-form-create",
   "description": "一个基于 React + TS 的表单设计器",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/react-form-create.umd.js",
   "module": "dist/react-form-create.es.js",
   "types": "src/types/index.d.ts",
@@ -39,6 +39,11 @@
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx}": "eslint --fix",
     "*.{css,less}": "stylelint 'src/**/*.{css,less}' --fix"
+  },
+  "peerDependencies": {
+    "@babel/standalone": "^7.16.7",
+    "antd": "^4.18.2",
+    "moment": "^2.29.1"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
