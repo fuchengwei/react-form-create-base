@@ -167,6 +167,7 @@ ReactDOM.render(
 ```typescript
 import React, { useRef } from 'react'
 import { DesignForm, DesignFormRef } from 'react-form-create'
+import 'antd/dist/antd.css'
 import 'react-form-create/dist/style.css'
 
 export default () => {
@@ -206,6 +207,7 @@ export default () => {
 ```typescript
 import React, { useRef } from 'react'
 import { GenerateForm, GenerateFormRef } from 'react-form-create'
+import 'antd/dist/antd.css'
 import 'react-form-create/dist/style.css'
 
 export default () => {
@@ -261,6 +263,6 @@ React 页面渲染生命周期函数
 
 [![HgpG2n.png](https://s4.ax1x.com/2022/02/15/HgpG2n.png)](https://imgtu.com/i/HgpG2n)
 
-目前是第一版 如果你有更好的建议、需求或者使用中有任何问题可以提 issues 或者加微信沟通 fuchengwei325795
+目前是第一版 详细的文档还需要时间来编写 如果你有更好的建议、需求或者使用中有任何问题可以提 issues 或者加微信沟通 fuchengwei325795
 
 （PS:）目前免费开源的是基础版本,有高级版或高级源码版需要的可加微信 fuchengwei325795
