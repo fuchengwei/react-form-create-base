@@ -1,7 +1,7 @@
 {
   "name": "react-form-create",
   "description": "一个基于 React + TS 的表单设计器",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "main": "dist/react-form-create.umd.js",
   "module": "dist/react-form-create.es.js",
   "types": "src/types/index.d.ts",
