@@ -25,6 +25,7 @@ export default () => {
     <script src="https://unpkg.com/moment/moment.js"></script>
     <script src="https://unpkg.com/antd/dist/antd.min.js"></script>
     <script src="https://unpkg.com/babel-standalone"></script>
+    <script src="https://unpkg.com/react-form-create/dist/react-form-create.umd.js"></script>
     <script src="https://unpkg.com/monaco-editor/min/vs/loader.js"></script>
     <script>
       require.config({

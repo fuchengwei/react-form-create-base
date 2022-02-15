@@ -29,7 +29,7 @@ https://github.com/fuchengwei/react-form-create-base
 
 ## npm
 
-https://www.npmjs.com/package/react-form-create-base
+https://www.npmjs.com/package/react-form-create
 
 ## 特性演示
 
