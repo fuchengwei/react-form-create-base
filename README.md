@@ -17,7 +17,7 @@
 
 ## 示例地址（Github）
 
-https://fuchengwei.github.io/react-form-create-base
+https://fuchengwei.github.io/react-form-create-base/src/example/index.html
 
 ## 示例地址（Gitee）
 
