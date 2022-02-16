@@ -17,11 +17,11 @@
 
 ## 示例地址（Github）
 
-https://fuchengwei.github.io/react-form-create-base/src/example/index.html
+https://fuchengwei.github.io/react-form-create-base
 
 ## 示例地址（Gitee）
 
-https://fuchengwei.gitee.io/vue-form-create/example/react-form-create/index.html
+http://fuchengwei.gitee.io/react-form-create-base
 
 ## Github
 
