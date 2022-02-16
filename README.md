@@ -21,7 +21,7 @@ https://fuchengwei.github.io/react-form-create-base/src/example/index.html
 
 ## 示例地址（Gitee）
 
-http://fuchengwei.gitee.io/react-form-create-base/src/example/index.html
+https://fuchengwei.gitee.io/vue-form-create/example/react-form-create/index.html
 
 ## Github
 
