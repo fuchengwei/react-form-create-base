@@ -98,6 +98,10 @@ $ yarn add react-form-create --save
 
 2. cdn 引入 ant-design 需要自行引入 [moment](http://momentjs.com/) 以及 [babel-standalone](https://github.com/babel/babel-standalone)。
 
+3. 动态 Props 中的属性同 antd 组件的所有属性一致，有更灵活的属性配置可以使用动态 Props。
+
+4. 动态 Props、FormItemProps 和动作设置中都可以全局访问到 formInstance(表单实例属性)、state(全局 state 对象)、dispatch(更新 state 的方法)以及 antd(包括 antd 所有的组件以及全局方法（message、notification 等）)
+
 ### 示例
 
 **npm 引入**
